@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    background-color: #ccc; 
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1{
+    color: #ece9e8;
+    font-size: 2rem;
+    text-align: center;
+}
+h2{
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p{
+    color: #333;
+    text-align: center;
+    margin: 1rem;
+}
+
+#header{
+    background-color: rgb(75, 74, 74);
+    text-align: center;
+    padding: 30px;
+}
+
+section{
+    padding: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 30px 10px;
+}
+
+.item-fav{
+    display: flex;
+    justify-content: center;
+}
+
+.photo{
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+
+}

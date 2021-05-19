@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body{
+    background-color: #ccc; 
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1{
+    color: #ece9e8;
+    font-size: 2rem;
+    text-align: center;
+}
+h2{
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p{
+    color: #333;
+    text-align: center;
+    margin: 1rem;
+}
+
+#header{
+    background-color: rgb(75, 74, 74);
+    text-align: center;
+    padding: 30px;
+}
+
+section{
+    padding: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 30px 10px;
+}
+
+.item-fav{
+    display: flex;
+    justify-content: center;
+}
+
+.photo{
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+
+}
+
+#contents{
+    background-color: #ece9e8;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 30px;
+}
+
+#contents li a{
+    color: #333;
+    padding:0 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+
+#contents li a::before{
+    content:'▼';
+    font-size:0.8rem;
+    padding:0 10px 0 0;
+    color: #ece9e8;
+}
+
+#contents li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+
+    width: 80%;
+    height: 2px;
+    background: #c06148;
+
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+
+#contents li a:hover, #contents li a:hover::before{
+    color: #c06148;
+}
+
+#contents li a:hover::after{
+    transform: scale(1, 1);
+}
